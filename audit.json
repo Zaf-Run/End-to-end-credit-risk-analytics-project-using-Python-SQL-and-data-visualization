@@ -1,0 +1,56 @@
+{
+ "rows": 4521,
+ "cols": 17,
+ "duplicates": 0,
+ "missing_cells": 0,
+ "unknown_counts": {
+  "job": 38,
+  "education": 187,
+  "contact": 1324,
+  "poutcome": 3705
+ },
+ "negative_balance": 366,
+ "zero_balance": 357,
+ "pdays_minus1": 3705,
+ "default_counts": {
+  "no": 4445,
+  "yes": 76
+ },
+ "iqr_outliers": {
+  "age": 38,
+  "balance": 506,
+  "duration": 330,
+  "campaign": 318,
+  "pdays": 816,
+  "previous": 816
+ },
+ "balance_p99": 14194.600000000024,
+ "balance_max": 71188,
+ "clean_cols": [
+  "customer_id",
+  "age",
+  "job",
+  "marital",
+  "education",
+  "default_raw",
+  "balance",
+  "housing_loan",
+  "personal_loan",
+  "contact",
+  "day",
+  "month",
+  "duration",
+  "campaign",
+  "pdays",
+  "previous",
+  "poutcome",
+  "y",
+  "default_flag",
+  "housing_loan_flag",
+  "personal_loan_flag",
+  "negative_balance_flag",
+  "age_band",
+  "balance_band",
+  "previously_contacted_flag"
+ ]
+}

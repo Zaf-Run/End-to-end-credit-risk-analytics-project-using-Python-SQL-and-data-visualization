@@ -1,0 +1,109 @@
+Real output from running 02_risk_queries.sql in SQLite 3.45 on data/processed/bank_clean.csv.
+Statements are numbered in file order. Q9 in the script is intentionally a comment, so statement numbers after 8 are one lower than the Q labels.
+
+### Statement 1
+ customers  defaults  default_rate_pct
+      4521        76              1.68
+
+### Statement 2
+      segment  customers  defaults  default_rate_pct
+ entrepreneur        168         7              4.17
+   unemployed        128         3              2.34
+self-employed        183         4              2.19
+   technician        768        15              1.95
+    housemaid        112         2              1.79
+     services        417         7              1.68
+  blue-collar        946        14              1.48
+   management        969        14              1.44
+      retired        230         3              1.30
+        admin        478         6              1.26
+      student         84         1              1.19
+      unknown         38         0              0.00
+
+### Statement 3
+default_status  customers  avg_balance  min_balance  max_balance
+            no       4445       1451.0        -1746        71188
+           yes         76       -209.0        -3313         1238
+
+### Statement 4
+balance_band  customers  defaults  default_rate_pct
+  1 Negative        366        43             11.75
+      2 Zero        357         7              1.96
+     3 1-500       1664        24              1.44
+  4 501-2000       1247         2              0.16
+5 Above 2000        887         0              0.00
+
+### Statement 5
+          job  personal_loan_holders  housing_loan_holders  any_loan_holders
+  blue-collar                    156                   695               748
+   management                    120                   503               562
+   technician                    119                   424               470
+        admin                     91                   302               337
+     services                     74                   285               318
+ entrepreneur                     41                    94               106
+self-employed                     30                    88               103
+      retired                     32                    50                69
+   unemployed                     13                    58                62
+    housemaid                     13                    39                47
+      student                      1                    20                21
+      unknown                      1                     1                 1
+
+### Statement 6
+balance_band  customers  defaults  share_of_customers_pct  share_of_defaults_pct  lift
+  1 Negative        366        43                     8.1                   56.6  6.99
+      2 Zero        357         7                     7.9                    9.2  1.17
+     3 1-500       1664        24                    36.8                   31.6  0.86
+  4 501-2000       1247         2                    27.6                    2.6  0.10
+5 Above 2000        887         0                    19.6                    0.0  0.00
+
+### Statement 7
+           check_name  records
+      null_key_fields        0
+   age_outside_18_100        0
+   default_not_yes_no        0
+          unknown_job       38
+    unknown_education      187
+     negative_balance      366
+duplicate_customer_id        0
+
+### Statement 8
+ segment_type       segment  customers  defaults  default_rate_pct  risk_rank
+ balance_band    1 Negative        366        43             11.75          1
+          job  entrepreneur        168         7              4.17          2
+personal_loan           yes        691        25              3.62          3
+      marital      divorced        528        18              3.41          4
+          job    unemployed        128         3              2.34          5
+          job self-employed        183         4              2.19          6
+    education     secondary       2306        46              1.99          7
+ balance_band        2 Zero        357         7              1.96          8
+          job    technician        768        15              1.95          9
+      marital        single       1196        22              1.84         10
+
+### Statement 9
+risk_tier  customers  defaults  default_rate_pct  share_of_defaults_pct
+      Low       3567        23              0.64                   30.3
+   Medium        588        10              1.70                   13.2
+     High        366        43             11.75                   56.6
+
+### Statement 10
+ customer_id  age         job  balance personal_loan
+        2073   44  management    -1313           yes
+        1973   42  technician    -1310           yes
+        2273   47  technician    -1148           yes
+         268   33  technician     -988           yes
+        3565   30  technician     -970           yes
+        2490   55     retired     -966           yes
+        3828   51  management     -892           yes
+        4202   36  unemployed     -872           yes
+        2721   46  management     -852           yes
+        2749   40 blue-collar     -839           yes
+        3566   38    services     -762           yes
+        2565   50  technician     -701           yes
+        1869   42  management     -679           yes
+        3494   36  management     -679           yes
+        1236   32    services     -632           yes
+        1063   50  technician     -568           yes
+        3485   30  management     -559           yes
+        2231   48 blue-collar     -552           yes
+        4214   30  technician     -522           yes
+        3209   30 blue-collar     -518           yes

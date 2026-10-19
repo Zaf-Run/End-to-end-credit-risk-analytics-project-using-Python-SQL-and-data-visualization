@@ -1,0 +1,460 @@
+{
+ "N": 4521,
+ "K": 76,
+ "base_rate": 0.0168104401681044,
+ "tests": [
+  {
+   "variable": "balance_band",
+   "test": "chi-square",
+   "p_value": 0.0,
+   "cramers_v": 0.238796,
+   "cells_expected_below_5": 0.0,
+   "cells": 10.0,
+   "p_holm_adjusted": 0.0
+  },
+  {
+   "variable": "balance (numeric)",
+   "test": "Mann-Whitney U",
+   "p_value": 0.0,
+   "cramers_v": NaN,
+   "cells_expected_below_5": NaN,
+   "cells": NaN,
+   "p_holm_adjusted": 0.0
+  },
+  {
+   "variable": "personal_loan",
+   "test": "Fisher exact",
+   "p_value": 0.000133,
+   "cramers_v": 0.061603,
+   "cells_expected_below_5": 0.0,
+   "cells": 4.0,
+   "p_holm_adjusted": 0.000928
+  },
+  {
+   "variable": "marital",
+   "test": "chi-square",
+   "p_value": 0.002083,
+   "cramers_v": 0.05226,
+   "cells_expected_below_5": 0.0,
+   "cells": 6.0,
+   "p_holm_adjusted": 0.0125
+  },
+  {
+   "variable": "age (numeric)",
+   "test": "Mann-Whitney U",
+   "p_value": 0.282235,
+   "cramers_v": NaN,
+   "cells_expected_below_5": NaN,
+   "cells": NaN,
+   "p_holm_adjusted": 1.0
+  },
+  {
+   "variable": "age_band",
+   "test": "chi-square",
+   "p_value": 0.328862,
+   "cramers_v": 0.031958,
+   "cells_expected_below_5": 1.0,
+   "cells": 10.0,
+   "p_holm_adjusted": 1.0
+  },
+  {
+   "variable": "education",
+   "test": "chi-square",
+   "p_value": 0.390467,
+   "cramers_v": 0.025792,
+   "cells_expected_below_5": 1.0,
+   "cells": 8.0,
+   "p_holm_adjusted": 1.0
+  },
+  {
+   "variable": "job",
+   "test": "chi-square",
+   "p_value": 0.593637,
+   "cramers_v": 0.04537,
+   "cells_expected_below_5": 7.0,
+   "cells": 24.0,
+   "p_holm_adjusted": 1.0
+  },
+  {
+   "variable": "housing_loan",
+   "test": "Fisher exact",
+   "p_value": 0.726525,
+   "cramers_v": 0.005145,
+   "cells_expected_below_5": 0.0,
+   "cells": 4.0,
+   "p_holm_adjusted": 1.0
+  }
+ ],
+ "median_balance_default": -19.0,
+ "median_balance_nondefault": 462.0,
+ "mean_balance_default": -208.72368421052633,
+ "mean_balance_nondefault": 1450.5509561304837,
+ "overall_ci": [
+  0.013452318489167135,
+  0.02098901974463977
+ ],
+ "balance_total_customers": {
+  "mean": 1422.6578190665782,
+  "median": 444.0
+ },
+ "age_mean": 41.17009511170095,
+ "age_median": 39.0,
+ "pct_loan": 0.1528422915284229,
+ "pct_housing": 0.5660252156602521,
+ "diff_neg_vs_nonneg": [
+  0.1095441005306662,
+  0.07644481212609555,
+  0.14264338893523684
+ ],
+ "diff_loan_vs_noloan": [
+  0.022863523179408506,
+  0.008474631453413517,
+  0.03725241490540349
+ ],
+ "cross_neg_loan": [
+  {
+   "negative_balance_flag": 0,
+   "personal_loan_flag": 0,
+   "sum": 23,
+   "count": 3567,
+   "rate": 0.0064
+  },
+  {
+   "negative_balance_flag": 0,
+   "personal_loan_flag": 1,
+   "sum": 10,
+   "count": 588,
+   "rate": 0.017
+  },
+  {
+   "negative_balance_flag": 1,
+   "personal_loan_flag": 0,
+   "sum": 28,
+   "count": 263,
+   "rate": 0.1065
+  },
+  {
+   "negative_balance_flag": 1,
+   "personal_loan_flag": 1,
+   "sum": 15,
+   "count": 103,
+   "rate": 0.1456
+  }
+ ],
+ "tiers": [
+  {
+   "dimension": "risk_tier",
+   "segment": "Low",
+   "defaults": 23,
+   "customers": 3567,
+   "default_rate": 0.0064,
+   "ci_low": 0.0043,
+   "ci_high": 0.0097,
+   "share_of_customers": 0.789,
+   "share_of_defaults": 0.3026,
+   "lift_vs_portfolio": 0.3836
+  },
+  {
+   "dimension": "risk_tier",
+   "segment": "Medium",
+   "defaults": 10,
+   "customers": 588,
+   "default_rate": 0.017,
+   "ci_low": 0.0093,
+   "ci_high": 0.031,
+   "share_of_customers": 0.1301,
+   "share_of_defaults": 0.1316,
+   "lift_vs_portfolio": 1.0117
+  },
+  {
+   "dimension": "risk_tier",
+   "segment": "High",
+   "defaults": 43,
+   "customers": 366,
+   "default_rate": 0.1175,
+   "ci_low": 0.0884,
+   "ci_high": 0.1545,
+   "share_of_customers": 0.081,
+   "share_of_defaults": 0.5658,
+   "lift_vs_portfolio": 6.9889
+  }
+ ],
+ "points": [
+  {
+   "dimension": "risk_points",
+   "segment": 0,
+   "defaults": 23,
+   "customers": 3567,
+   "default_rate": 0.0064,
+   "ci_low": 0.0043,
+   "ci_high": 0.0097,
+   "share_of_customers": 0.789,
+   "share_of_defaults": 0.3026,
+   "lift_vs_portfolio": 0.3836
+  },
+  {
+   "dimension": "risk_points",
+   "segment": 1,
+   "defaults": 10,
+   "customers": 588,
+   "default_rate": 0.017,
+   "ci_low": 0.0093,
+   "ci_high": 0.031,
+   "share_of_customers": 0.1301,
+   "share_of_defaults": 0.1316,
+   "lift_vs_portfolio": 1.0117
+  },
+  {
+   "dimension": "risk_points",
+   "segment": 2,
+   "defaults": 28,
+   "customers": 263,
+   "default_rate": 0.1065,
+   "ci_low": 0.0747,
+   "ci_high": 0.1496,
+   "share_of_customers": 0.0582,
+   "share_of_defaults": 0.3684,
+   "lift_vs_portfolio": 6.3332
+  },
+  {
+   "dimension": "risk_points",
+   "segment": 3,
+   "defaults": 15,
+   "customers": 103,
+   "default_rate": 0.1456,
+   "ci_low": 0.0903,
+   "ci_high": 0.2265,
+   "share_of_customers": 0.0228,
+   "share_of_defaults": 0.1974,
+   "lift_vs_portfolio": 8.6631
+  }
+ ],
+ "tier_points_auc_insample": 0.780909952045468,
+ "cv_metrics": {
+  "Rule tiers (points)": {
+   "auc": [
+    0.7795441507311587,
+    0.04970647042962026
+   ],
+   "ap": [
+    0.08807771661097868,
+    0.028796880769717727
+   ],
+   "brier": [
+    0.015687681548645558,
+    0.00044334020022534875
+   ]
+  },
+  "Logistic, 2 flags": {
+   "auc": [
+    0.7802400637420323,
+    0.050133665581112076
+   ],
+   "ap": [
+    0.09207542220067726,
+    0.03497971671748281
+   ],
+   "brier": [
+    0.01567762979306849,
+    0.0004764750479855305
+   ]
+  },
+  "Logistic, full": {
+   "auc": [
+    0.8721973190851144,
+    0.025323880192279793
+   ],
+   "ap": [
+    0.15399437412122635,
+    0.04310146143273998
+   ],
+   "brier": [
+    0.01565136445244361,
+    0.00044291848762227263
+   ]
+  },
+  "Decision tree (depth 3)": {
+   "auc": [
+    0.8612487814023246,
+    0.04187443696951008
+   ],
+   "ap": [
+    0.11176020484533351,
+    0.027475419800307436
+   ],
+   "brier": [
+    0.015467488090649698,
+    0.0005354726745738323
+   ]
+  }
+ },
+ "brier_baseline_constant": 0.016527849269458987,
+ "pr_baseline": 0.0168104401681044,
+ "oof_auc_full": 0.8713900893967202,
+ "oof_ap_full": 0.11854563379033169,
+ "top10": {
+  "threshold": 0.04463381250657121,
+  "tp": 45,
+  "fp": 408,
+  "fn": 31,
+  "tn": 4037,
+  "precision": 0.09933774834437085,
+  "recall": 0.5921052631578947,
+  "f1": 0.17013232514177692
+ },
+ "cost_thresholds": [
+  {
+   "fn_to_fp_cost_ratio": 5,
+   "threshold": 0.21408,
+   "tp": 6,
+   "fp": 14,
+   "fn": 70,
+   "tn": 4431,
+   "cost": 364.0,
+   "cost_flag_nobody": 380.0,
+   "cost_flag_everybody": 4445.0
+  },
+  {
+   "fn_to_fp_cost_ratio": 10,
+   "threshold": 0.0742,
+   "tp": 34,
+   "fp": 258,
+   "fn": 42,
+   "tn": 4187,
+   "cost": 678.0,
+   "cost_flag_nobody": 760.0,
+   "cost_flag_everybody": 4445.0
+  },
+  {
+   "fn_to_fp_cost_ratio": 20,
+   "threshold": 0.03916,
+   "tp": 48,
+   "fp": 440,
+   "fn": 28,
+   "tn": 4005,
+   "cost": 1000.0,
+   "cost_flag_nobody": 1520.0,
+   "cost_flag_everybody": 4445.0
+  }
+ ],
+ "calibration": [
+  {
+   "bin": 0,
+   "mean_pred": 0.0014,
+   "obs_rate": 0.0,
+   "n": 453,
+   "defaults": 0
+  },
+  {
+   "bin": 1,
+   "mean_pred": 0.0021,
+   "obs_rate": 0.0,
+   "n": 452,
+   "defaults": 0
+  },
+  {
+   "bin": 2,
+   "mean_pred": 0.0027,
+   "obs_rate": 0.0,
+   "n": 452,
+   "defaults": 0
+  },
+  {
+   "bin": 3,
+   "mean_pred": 0.0033,
+   "obs_rate": 0.0,
+   "n": 452,
+   "defaults": 0
+  },
+  {
+   "bin": 4,
+   "mean_pred": 0.0041,
+   "obs_rate": 0.0111,
+   "n": 452,
+   "defaults": 5
+  },
+  {
+   "bin": 5,
+   "mean_pred": 0.0052,
+   "obs_rate": 0.0044,
+   "n": 452,
+   "defaults": 2
+  },
+  {
+   "bin": 6,
+   "mean_pred": 0.0069,
+   "obs_rate": 0.0066,
+   "n": 452,
+   "defaults": 3
+  },
+  {
+   "bin": 7,
+   "mean_pred": 0.011,
+   "obs_rate": 0.0044,
+   "n": 452,
+   "defaults": 2
+  },
+  {
+   "bin": 8,
+   "mean_pred": 0.0261,
+   "obs_rate": 0.042,
+   "n": 452,
+   "defaults": 19
+  },
+  {
+   "bin": 9,
+   "mean_pred": 0.1052,
+   "obs_rate": 0.0996,
+   "n": 452,
+   "defaults": 45
+  }
+ ],
+ "oof_auc_ci": [
+  0.8349942378272941,
+  0.9033481806540935
+ ],
+ "holdout": {
+  "n_test": 1357,
+  "defaults_test": 23,
+  "auc": 0.9097353497164461,
+  "ap": 0.21848632673402726,
+  "brier": 0.015117180906065057
+ },
+ "odds_ratios": [
+  {
+   "variable": "negative_balance",
+   "odds_ratio": 3.1299,
+   "ci_low": 1.7115,
+   "ci_high": 5.7236,
+   "p_value": 0.0002
+  },
+  {
+   "variable": "personal_loan",
+   "odds_ratio": 1.797,
+   "ci_low": 1.0752,
+   "ci_high": 3.0033,
+   "p_value": 0.0253
+  },
+  {
+   "variable": "housing_loan",
+   "odds_ratio": 0.8245,
+   "ci_low": 0.5022,
+   "ci_high": 1.3537,
+   "p_value": 0.4456
+  },
+  {
+   "variable": "age_per_10yrs",
+   "odds_ratio": 0.912,
+   "ci_low": 0.7105,
+   "ci_high": 1.1708,
+   "p_value": 0.47
+  },
+  {
+   "variable": "log_positive_balance",
+   "odds_ratio": 0.6981,
+   "ci_low": 0.6207,
+   "ci_high": 0.7852,
+   "p_value": 0.0
+  }
+ ]
+}
