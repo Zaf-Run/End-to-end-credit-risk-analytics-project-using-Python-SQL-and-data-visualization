@@ -30,7 +30,7 @@ Logistic regression, repeated cross validation: ROC AUC 0.87, average precision 
 All results are associations. No causal claim is made.
 
 ## Dashboard preview
-![Dashboard prototype](charts/10_dashboard_preview_page1.png)
+[Dashboard preview](charts/10_dashboard_preview_page1.png)
 Python layout prototype, not a Power BI export. Full design: powerbi/powerbi_spec.md.
 Screenshots of the finished Power BI report: add here after you build it. Dashboard link: add here after publishing.
 
