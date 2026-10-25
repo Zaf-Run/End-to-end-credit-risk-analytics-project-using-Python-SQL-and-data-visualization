@@ -1,0 +1,6 @@
+,odds_ratio,ci_low,ci_high,p_value
+negative_balance,3.1299,1.7115,5.7236,0.0002
+personal_loan,1.797,1.0752,3.0033,0.0253
+housing_loan,0.8245,0.5022,1.3537,0.4456
+age_per_10yrs,0.912,0.7105,1.1708,0.47
+log_positive_balance,0.6981,0.6207,0.7852,0.0
