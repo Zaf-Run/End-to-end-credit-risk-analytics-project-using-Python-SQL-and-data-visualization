@@ -1,4 +1,4 @@
-# SQL setup from scratch (free, no MySQL)
+# SQL setup from scratch (SQLite Free)
 
 Option A: browser only. Open sqlime.org (or any online SQLite playground). Upload data/processed/bank_clean.csv. It creates a table from the file. Name the table bank_clean. Paste a query from 02_risk_queries.sql and run it one at a time.
 Option B: local, simple. Install DB Browser for SQLite (free). File > New Database. File > Import > Table from CSV file, choose bank_clean.csv, tick "Column names in first line", name the table bank_clean. Open the Execute SQL tab, paste a query, press the play button.
