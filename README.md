@@ -140,10 +140,6 @@ The findings support several practical considerations for risk analysis:
 
 ![Dashboard preview](charts/10_dashboard_preview_page1.png)
 
-The current image is a Python-generated dashboard layout prototype, not an exported Power BI report. The detailed design specification, including proposed pages, DAX measures, and validation values, is available in [`powerbi/powerbi_spec.md`](powerbi/powerbi_spec.md).
-
-The interactive Power BI report has not yet been built or published. Screenshots and a report link can be added after implementation.
-
 ## 9. Repository Structure
 
 ```text
